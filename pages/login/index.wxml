@@ -1,0 +1,18 @@
+<view class="login">
+  <view id="login-title">
+    <text id="login-title_text">Ike Login</text>
+  </view>
+  <view id="login-info">
+    <view id="username">
+      <input id="username-input" placeholder="账号"></input>
+    </view>
+    <view id="password">
+      <input id="password-input" placeholder="密码"></input>
+    </view>
+   
+  </view>
+  <view id="login-bottom">
+    <button id="login-btn" size="mini" bindtap="Login">登录</button>
+  </view>
+</view>
+  

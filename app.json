@@ -1,0 +1,6 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/dashboard/index"
+  ]
+}
