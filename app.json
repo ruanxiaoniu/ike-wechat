@@ -1,6 +1,47 @@
 {
   "pages": [
     "pages/login/index",
-    "pages/dashboard/index"
-  ]
-}
+    "pages/dashboard/index",
+    "pages/CRM/index",
+    "pages/product/index",
+    "pages/order/index",
+    "pages/personal/index"
+  ],
+  "tabBar": {
+    "color": "#ffffff",
+    "backgroundColor": "#283443",
+    "list": [{
+      "pagePath": "pages/dashboard/index",
+      "text": "首页",
+      "iconPath": "images/dashboard.png",
+      "selectedIconPath": "images/dashboard.png"
+    },{
+      "pagePath": "pages/CRM/index",
+      "text": "CRM",
+      "iconPath": "images/dashboard.png",
+      "selectedIconPath": "images/dashboard.png"
+    },{
+      "pagePath": "pages/product/index",
+      "text": "产品管理",
+      "iconPath": "images/dashboard.png",
+      "selectedIconPath": "images/dashboard.png"
+    },{
+      "pagePath": "pages/order/index",
+      "text": "订单管理",
+      "iconPath": "images/dashboard.png",
+      "selectedIconPath": "images/dashboard.png"
+    },{
+      "pagePath": "pages/personal/index",
+      "text": "个人中心",
+      "iconPath": "images/dashboard.png",
+      "selectedIconPath": "images/dashboard.png"
+    }
+  ]},
+  "window": {
+    "navigationBarBackgroundColor": "#283443"
+  },
+  "usingComponents": {
+    "iconfont": "./iconfont/iconfont"
+  },
+  "sitemapLocation": "sitemap.json"
+}                                                              

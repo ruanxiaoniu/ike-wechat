@@ -1,1 +1,10 @@
 /* pages/dashboard/index.wxss */
+.my-chart{
+  width: 100%;
+  height: 400px;
+}
+.cutomer_chart, .order-chart{
+  width: 100%;
+  height: 400px;
+
+}

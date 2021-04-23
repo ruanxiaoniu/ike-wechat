@@ -1,0 +1,21 @@
+<view class="tabs"> 
+  <view class="left">
+    <view class="tabs-tab">
+      <view class="tabs-tab_item">
+        <iconfont class="my-icon" name="icondashboard"></iconfont>
+        <view>CRM</view>
+      </view>
+      <view class="tab_children">
+        <view class="tab_children_child">全部客户</view>
+        <view class="tab_children_child">我的客户</view>
+        <view class="tab_children_child">联系跟进</view>
+        <view class="tab_children_child">跟进计划</view>
+        <view class="tab_children_child">跟进任务</view>
+        <view class="tab_children_child">客户投诉</view>
+      </view>
+    </view>
+  </view>
+  <view class="right">
+    <slot></slot>
+  </view>
+</view>

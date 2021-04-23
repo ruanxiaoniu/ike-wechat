@@ -9,7 +9,7 @@ Page({
 
   },
   Login: function(){
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/dashboard/index',
     })
   }

@@ -1,0 +1,8 @@
+<view class="my-chart">
+  <view class="cutomer_chart">
+    <ec-canvas ec="{{customer_chart}}"></ec-canvas>
+  </view>
+  <view class="order-chart">
+    <ec-canvas ec="{{order_chart}}"></ec-canvas>
+  </view>
+</view>
