@@ -1,0 +1,10 @@
+<!--pages/CRM/allCustomers/index.wxml-->
+<view>
+  <table
+    tableHeader="{{tableHeader}}"
+    data="{{customerList}}"
+    collumKey="{{collumKey}}"
+    rowKey="{{rowKey}}">
+  </table>
+</view>
+

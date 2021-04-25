@@ -1,3 +1,20 @@
-<view>
-  
+<!--pages/CRM/index.wxml-->
+<view class="tabs"> 
+  <scroll-view class="tabs-items" scroll-x="true" style="width: 100%; padding-right: 10px">
+    <view class="scroller">
+      <view 
+        class="{{tabclass[index] ? tabclass[index] : 'tabs-items_item'}}" 
+        wx:for="{{tabOptions}}" 
+        wx:key="*this" 
+        data-index="{{index}}"
+        bindtap="chickTab">
+        {{item}}
+      </view>
+    </view>
+    
+  </scroll-view>
+  <view>
+    <all-customers wx:if="{{active === tabOptions[0]}}"></all-customers>
+    <my-customers wx:elif="{{active === tabOptions[1]}}"></my-customers>
+  </view>
 </view>

@@ -2,6 +2,8 @@
   "pages": [
     "pages/login/index",
     "pages/dashboard/index",
+    "pages/CRM/allCustomers/index",
+    "pages/CRM/myCustomers/index",
     "pages/CRM/index",
     "pages/product/index",
     "pages/order/index",
@@ -41,7 +43,8 @@
     "navigationBarBackgroundColor": "#283443"
   },
   "usingComponents": {
-    "iconfont": "./iconfont/iconfont"
+    "iconfont": "./iconfont/iconfont",
+    "table": "./components/table/index"
   },
   "sitemapLocation": "sitemap.json"
 }                                                              

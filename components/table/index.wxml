@@ -1,0 +1,24 @@
+<scroll-view class="table-scoller" scroll-x="true" style="width: 100%;">
+  <view class="table">
+    <view class="{{data.length > 0 ? 'coll' : 'coll-nodata'}}" wx:for="{{tableHeader}}" wx:for-index="index" wx:key="*this">
+      <view class="th">{{item}}</view>
+      <view class="tr">
+        <view class="td" wx:for="{{data}}" wx:for-index="dataIndex" wx:key="*this">
+          {{item[collumKey[index]]}}
+        </view>
+      </view>
+     
+    </view>
+    <!-- <view class="{{data.length > 0 ? 'coll' : 'coll-nodata'}}">
+      <view class="th">操作</view>
+      <view class="tr">
+        <view class="td" wx:for="{{data}}" wx:for-index="dataIndex" wx:key="*this">
+          <slot></slot>
+        </view>
+      </view>
+    </view> -->
+  </view>
+  <view wx:if="{{data.length <= 0}}" class="empty">
+    <view class="empty-data">暂无数据</view>
+  </view>
+</scroll-view>

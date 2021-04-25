@@ -1,20 +1,17 @@
 <view class="tabs"> 
-  <view class="left">
-    <view class="tabs-tab">
-      <view class="tabs-tab_item">
-        <iconfont class="my-icon" name="icondashboard"></iconfont>
-        <view>CRM</view>
-      </view>
-      <view class="tab_children">
-        <view class="tab_children_child">全部客户</view>
-        <view class="tab_children_child">我的客户</view>
-        <view class="tab_children_child">联系跟进</view>
-        <view class="tab_children_child">跟进计划</view>
-        <view class="tab_children_child">跟进任务</view>
-        <view class="tab_children_child">客户投诉</view>
+  <scroll-view class="tabs-items" scroll-x="true" style="width: 100%; padding-right: 10px">
+    <view class="scroller">
+      <view 
+        class="{{tabclass[index] ? tabclass[index] : 'tabs-items_item'}}" 
+        wx:for="{{tabOptions}}" 
+        wx:key="*this" 
+        data-index="{{index}}"
+        bindtap="chickTab">
+        {{item}}
       </view>
     </view>
-  </view>
+    
+  </scroll-view>
   <view class="right">
     <slot></slot>
   </view>

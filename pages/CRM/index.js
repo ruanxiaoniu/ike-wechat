@@ -1,11 +1,14 @@
-// pages/allCumstomer/index.js
+// pages/CRM/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    tabOptions: ["全部客户", "我的客户", "联系跟进", "跟进计划", "跟进任务", "客户投诉"],
+    // tabsrc: ["/pages/CRM/allCustomers/index", "/pages/CRM/myCustomers/index"],
+    tabclass: [".item_active"],
+    active: "全部客户"
   },
 
   /**
@@ -14,53 +17,10 @@ Page({
   onLoad: function (options) {
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  chickTab:function(event){
+    let index = event.currentTarget.dataset.index
+    let itemclass = []
+    itemclass[index] = ".item_active"
+    this.setData({tabclass: itemclass, active: this.data.tabOptions[index]}) 
   }
 })
